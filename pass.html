@@ -1,0 +1,36 @@
+<html>  
+<head>  
+<title> Password Matching  </title>  
+</head>  
+<script>  
+function matchPassword() {  
+  var pw1 = document.getElementById("pswd1");  
+  var pw2 = document.getElementById("pswd2");  
+  if(pw1 != pw2)  
+  {   
+    alert("Passwords did not match");  
+  } else {  
+    alert("Password created successfully");  
+  }  
+}  
+</script>  
+  
+<body>  
+<center>  
+<form>  
+ 
+<h3> Confirm password  </h3>  
+  
+<td> Enter Password </td>  
+<input type = "password" name = "pswd1"> <br><br>  
+   
+<td> Confirm Password </td>  
+<input type = "password" name = "pswd2"> <br><br>  
+  
+<!?Click to validate confirm password -->  
+<button type = "submit" onclick="matchPassword()">Submit</button>  
+  
+</form>  
+</center>  
+</body>  
+</html>  
